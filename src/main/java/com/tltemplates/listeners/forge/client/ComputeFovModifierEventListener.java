@@ -1,17 +1,16 @@
-package com.tltemplates.listeners.forge;
+package com.tltemplates.listeners.forge.client;
 
-import com.tltemplates.util.EventUtil;
-
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ComputeFovModifierEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@Mod.EventBusSubscriber(bus = EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(bus = EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public final class ComputeFovModifierEventListener {
 
 	@SubscribeEvent
 	public static final void onComputeFovModifierEvent(final ComputeFovModifierEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
 	}
 }

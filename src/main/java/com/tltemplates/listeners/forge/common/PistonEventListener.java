@@ -1,6 +1,4 @@
-package com.tltemplates.listeners.forge;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.forge.common;
 
 import net.minecraftforge.event.level.PistonEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,11 +10,13 @@ public final class PistonEventListener {
 
 	@SubscribeEvent
 	public static final void onPistonEvent$Post(final PistonEvent.Post event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL BOTH
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 
 	@SubscribeEvent
 	public static final void onPistonEvent$Pre(final PistonEvent.Pre event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL BOTH
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

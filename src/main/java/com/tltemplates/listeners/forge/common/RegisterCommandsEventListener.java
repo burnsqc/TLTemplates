@@ -1,6 +1,4 @@
-package com.tltemplates.listeners.forge;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.forge.common;
 
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +10,7 @@ public final class RegisterCommandsEventListener {
 
 	@SubscribeEvent
 	public static void onRegisterCommandsEvent(final RegisterCommandsEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL SERVER
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

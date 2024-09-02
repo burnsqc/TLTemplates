@@ -1,6 +1,4 @@
-package com.tltemplates.listeners.forge;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.forge.common;
 
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +10,6 @@ public final class AnvilUpdateEventListener {
 
 	@SubscribeEvent
 	public static final void onAnvilUpdateEvent(final AnvilUpdateEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL BOTH
 	}
 }

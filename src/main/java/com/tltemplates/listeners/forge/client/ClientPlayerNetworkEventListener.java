@@ -1,7 +1,5 @@
 package com.tltemplates.listeners.forge.client;
 
-import com.tltemplates.util.EventUtil;
-
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,16 +11,16 @@ public final class ClientPlayerNetworkEventListener {
 
 	@SubscribeEvent
 	public static final void onClientPlayerNetworkEvent$Clone(final ClientPlayerNetworkEvent.Clone event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
 	}
 
 	@SubscribeEvent
 	public static final void onClientPlayerNetworkEvent$LoggingIn(final ClientPlayerNetworkEvent.LoggingIn event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
 	}
 
 	@SubscribeEvent
 	public static final void onClientPlayerNetworkEvent$LoggingOut(final ClientPlayerNetworkEvent.LoggingOut event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
 	}
 }

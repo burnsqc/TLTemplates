@@ -1,6 +1,4 @@
-package com.tltemplates.listeners.forge;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.forge.common;
 
 import net.minecraftforge.event.level.NoteBlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,11 +10,13 @@ public final class NoteBlockEventListener {
 
 	@SubscribeEvent
 	public static final void onNoteBlockEvent$Change(final NoteBlockEvent.Change event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL SERVER
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 
 	@SubscribeEvent
 	public static final void onNoteBlockEvent$Play(final NoteBlockEvent.Play event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL BOTH
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

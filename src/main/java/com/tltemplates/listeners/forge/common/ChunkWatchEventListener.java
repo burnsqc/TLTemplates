@@ -1,6 +1,4 @@
-package com.tltemplates.listeners.forge;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.forge.common;
 
 import net.minecraftforge.event.level.ChunkWatchEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,11 +10,11 @@ public final class ChunkWatchEventListener {
 
 	@SubscribeEvent
 	public static final void onChunkWatchEvent$UnWatch(final ChunkWatchEvent.UnWatch event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL SERVER
 	}
 
 	@SubscribeEvent
 	public static final void onChunkWatchEvent$Watch(final ChunkWatchEvent.Watch event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL SERVER
 	}
 }

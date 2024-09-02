@@ -1,6 +1,4 @@
-package com.tltemplates.listeners;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.mod.client;
 
 import net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +10,7 @@ public final class RegisterClientTooltipComponentFactoriesEventListener {
 
 	@SubscribeEvent
 	public static void onRegisterClientTooltipComponentFactoriesEvent(final RegisterClientTooltipComponentFactoriesEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

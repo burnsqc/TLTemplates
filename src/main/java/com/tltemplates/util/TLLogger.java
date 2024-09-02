@@ -33,6 +33,10 @@ public class TLLogger {
 			logs.replace(message, System.currentTimeMillis());
 		}
 	}
+	
+	public void log(String... message) {
+		this.log(message.toString());
+	}
 
 	// SUPPRESS BY COUNT
 	// EXACT MESSAGE

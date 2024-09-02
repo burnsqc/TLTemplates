@@ -1,6 +1,4 @@
-package com.tltemplates.listeners;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.mod.common;
 
 import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +10,6 @@ public final class AddPackFindersEventListener {
 
 	@SubscribeEvent
 	public static final void onAddPackFindersEvent(final AddPackFindersEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL BOTH
 	}
 }

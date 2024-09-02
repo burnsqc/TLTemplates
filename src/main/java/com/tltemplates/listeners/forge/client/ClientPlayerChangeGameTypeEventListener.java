@@ -1,7 +1,5 @@
 package com.tltemplates.listeners.forge.client;
 
-import com.tltemplates.util.EventUtil;
-
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ClientPlayerChangeGameTypeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,6 +11,6 @@ public final class ClientPlayerChangeGameTypeEventListener {
 
 	@SubscribeEvent
 	public static final void onClientPlayerChangeGameTypeEvent(final ClientPlayerChangeGameTypeEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+		//LOGICAL CLIENT
 	}
 }

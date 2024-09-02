@@ -1,6 +1,4 @@
-package com.tltemplates.listeners;
-
-import com.tltemplates.util.EventUtil;
+package com.tltemplates.listeners.mod.client;
 
 import net.minecraftforge.client.event.RegisterClientReloadListenersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,7 +9,8 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 public final class RegisterClientReloadListenersEventListener {
 
 	@SubscribeEvent
-	public static void onRegisterClientReloadListenersEvent(final RegisterClientReloadListenersEvent event) {
-		EventUtil.logEvent(event, Thread.currentThread());
+	public static final void onRegisterClientReloadListenersEvent(final RegisterClientReloadListenersEvent event) {
+		//LOGICAL CLIENT
+		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }
