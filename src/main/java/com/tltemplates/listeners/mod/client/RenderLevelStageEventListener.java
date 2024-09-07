@@ -3,16 +3,16 @@ package com.tltemplates.listeners.mod.client;
 import com.tltemplates.util.EventUtil;
 
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.client.event.RenderLevelStageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 @Mod.EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public final class BuildCreativeModeTabContentsEventListener {
+public final class RenderLevelStageEventListener {
 
 	@SubscribeEvent
-	public static final void onBuildCreativeModeTabContentsEvent(final BuildCreativeModeTabContentsEvent event) {
+	public static final void onRenderLevelStageEvent$RegisterStageEvent(final RenderLevelStageEvent.RegisterStageEvent event) {
 		EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

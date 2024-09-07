@@ -1,5 +1,7 @@
 package com.tltemplates.listeners.forge.common;
 
+import com.tltemplates.server.commands.StopIntegratedServer;
+
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -12,5 +14,6 @@ public final class RegisterCommandsEventListener {
 	public static void onRegisterCommandsEvent(final RegisterCommandsEvent event) {
 		//LOGICAL SERVER
 		//EventUtil.logEvent(event, Thread.currentThread());
+		StopIntegratedServer.register(event.getDispatcher());
 	}
 }

@@ -1,5 +1,7 @@
 package com.tltemplates.listeners.mod.client;
 
+import com.tltemplates.util.EventUtil;
+
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,19 +13,16 @@ public final class RegisterColorHandlersEventListener {
 
 	@SubscribeEvent
 	public static final void onRegisterColorHandlersEvent$Block(final RegisterColorHandlersEvent.Block event) {
-		//LOGICAL CLIENT
-		//EventUtil.logEvent(event, Thread.currentThread());
+		EventUtil.logEvent(event, Thread.currentThread());
 	}
 
 	@SubscribeEvent
 	public static final void onRegisterColorHandlersEvent$ColorResolver(final RegisterColorHandlersEvent.ColorResolvers event) {
-		//LOGICAL CLIENT
-		//EventUtil.logEvent(event, Thread.currentThread());
+		EventUtil.logEvent(event, Thread.currentThread());
 	}
 
 	@SubscribeEvent
 	public static final void onRegisterColorHandlersEvent$Item(final RegisterColorHandlersEvent.Item event) {
-		//LOGICAL CLIENT
-		//EventUtil.logEvent(event, Thread.currentThread());
+		EventUtil.logEvent(event, Thread.currentThread());
 	}
 }

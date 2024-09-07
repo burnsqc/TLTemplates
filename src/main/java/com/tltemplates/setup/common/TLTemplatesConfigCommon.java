@@ -10,7 +10,7 @@ public final class TLTemplatesConfigCommon {
 
 	static {
 		BUILDER.comment("TLTEMPLATES COMMON CONFIG\n");
-		COMMON_ON = BUILDER.comment("true/false").define("Common Config", true);
+		COMMON_ON = BUILDER.comment("true/false").define("Common Config", false);
 		COMMON_SPEC = BUILDER.build();
 	}
 }

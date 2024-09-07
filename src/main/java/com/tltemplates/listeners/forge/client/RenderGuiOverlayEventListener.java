@@ -12,12 +12,10 @@ public final class RenderGuiOverlayEventListener {
 	@SubscribeEvent
 	public static final void onRenderGuiOverlayEvent$Post(final RenderGuiOverlayEvent.Post event) {
 		//LOGICAL CLIENT
-		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 
 	@SubscribeEvent
 	public static final void onRenderGuiOverlayEvent$Pre(final RenderGuiOverlayEvent.Pre event) {
 		//LOGICAL CLIENT
-		//EventUtil.logEvent(event, Thread.currentThread());
 	}
 }
