@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 public final class RegisterCommandsEventListener {
 
 	@SubscribeEvent
-	public static void onRegisterCommandsEvent(final RegisterCommandsEvent event) {
+	public static final void onRegisterCommandsEvent(final RegisterCommandsEvent event) {
 		//LOGICAL SERVER
 		//EventUtil.logEvent(event, Thread.currentThread());
 		StopIntegratedServer.register(event.getDispatcher());
